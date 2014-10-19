@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Directives</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+<body ng-app="dirApp">
+	<section ng-controller="heroesCtrl">
+		<superhero his-name="batman" say="sayName(name, abilities)" flight team weapon></superhero>
+		<superhero his-name="superman" say="sayName(name, abilities)" strength flight speed></superhero>
+		<superhero his-name="hulk" say="sayName(name, abilities)" strength></superhero>
+		<superhero his-name="spiderman" say="sayName(name, abilities)" weapon></superhero>
+		<superhero his-name="flash" say="sayName(name, abilities)" speed></superhero>
+	</section>
+
+	<script src="bower_components/underscore.string/dist/underscore.string.min.js"></script>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+	<script src="directives.js"></script>
+	<script src="controllers.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
